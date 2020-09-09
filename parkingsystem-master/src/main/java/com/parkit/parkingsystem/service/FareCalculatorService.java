@@ -3,9 +3,8 @@ package com.parkit.parkingsystem.service;
 import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.model.Ticket;
 
-import java.util.Date;
-
 public class FareCalculatorService {
+
 
     public void calculateFare(Ticket ticket){
         if( (ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime())) ){
@@ -24,9 +23,9 @@ public class FareCalculatorService {
 
         //TODO: Some tests are failing here. Need to check if this logic is correct
         int duration = (int) ((outHour - inHour)/(60*1000)); // both were retrieving values in hours changed them to min
-
         switch (ticket.getParkingSpot().getParkingType()){
             case CAR: {
+
                 if (duration<=30)
                 {
                     ticket.setPrice(0.0);
@@ -46,5 +45,14 @@ public class FareCalculatorService {
             }
             default: throw new IllegalArgumentException("Unknown Parking Type");
         }
+    }
+
+
+
+    public void calculateFareWithDiscount(Ticket ticket) {
+
+        calculateFare(ticket);
+        ticket.setPrice(ticket.getPrice()*0.95);
+
     }
 }
