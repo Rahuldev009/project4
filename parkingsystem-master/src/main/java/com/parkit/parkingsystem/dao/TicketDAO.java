@@ -86,4 +86,23 @@ public class TicketDAO {
         }
         return false;
     }
+
+    public boolean isRecurring(String vehicleRegNumber) {
+        Connection con = null;
+        try {
+            con = dataBaseConfig.getConnection();
+            PreparedStatement ps = con.prepareStatement(DBConstants.IS_RECURRING);
+            ps.setString(1,vehicleRegNumber);
+            ResultSet rs = ps.executeQuery();
+            boolean isRecurring = rs.next();
+            if (isRecurring){
+            return true;
+            }
+        }catch (Exception ex){
+            logger.error("Error saving ticket info",ex);
+        }finally {
+            dataBaseConfig.closeConnection(con);
+        }
+        return false;
+    }
 }
