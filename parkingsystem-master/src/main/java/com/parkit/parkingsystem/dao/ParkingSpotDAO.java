@@ -25,7 +25,7 @@ public class ParkingSpotDAO {
             ps.setString(1, parkingType.toString());
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
-                result = rs.getInt(1);;
+                result = rs.getInt(1);
             }
             dataBaseConfig.closeResultSet(rs);
             dataBaseConfig.closePreparedStatement(ps);
@@ -54,6 +54,31 @@ public class ParkingSpotDAO {
         }finally {
             dataBaseConfig.closeConnection(con);
         }
+    }
+
+    public boolean checkParking(ParkingSpot parkingSpot){
+        //update the availability fo that parking slot
+        Connection con = null;
+        int result;
+        try {
+            con = dataBaseConfig.getConnection();
+            PreparedStatement ps = con.prepareStatement(DBConstants.CHECK_PARKING);
+            ps.setInt(1, parkingSpot.getId());
+            ResultSet rs = ps.executeQuery();
+            if (rs.next())
+            {
+                result = rs.getInt(1);
+                if (result == 0)
+                {
+                    return false;
+                }
+            }
+        }catch (Exception ex){
+            logger.error("Error saving ticket info",ex);
+        }finally {
+            dataBaseConfig.closeConnection(con);
+        }
+        return true;
     }
 
 }

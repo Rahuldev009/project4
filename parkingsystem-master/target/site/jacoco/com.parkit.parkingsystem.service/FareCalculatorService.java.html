@@ -22,15 +22,28 @@ import com.parkit.parkingsystem.model.Ticket;
 
 <span class="pc bpc" id="L23" title="1 of 3 branches missed.">        switch (ticket.getParkingSpot().getParkingType()){</span>
             case CAR: {
-<span class="fc" id="L25">                ticket.setPrice(duration * (Fare.CAR_RATE_PER_HOUR/60));</span>
-<span class="fc" id="L26">                break;</span>
-            }
-            case BIKE: {
-<span class="fc" id="L29">                ticket.setPrice(duration * (Fare.BIKE_RATE_PER_HOUR/60));</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">                if (duration&lt;=30){</span>
+<span class="fc" id="L26">                    ticket.setPrice(0.0);</span>
+<span class="fc" id="L27">                    break;</span>
+                }
+<span class="fc" id="L29">                ticket.setPrice(duration * (Fare.CAR_RATE_PER_HOUR/60));</span>
 <span class="fc" id="L30">                break;</span>
             }
-<span class="nc" id="L32">            default: throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
+            case BIKE: {
+<span class="fc bfc" id="L33" title="All 2 branches covered.">                if (duration&lt;=30){</span>
+<span class="fc" id="L34">                    ticket.setPrice(0.0);</span>
+<span class="fc" id="L35">                    break;</span>
+                }
+<span class="fc" id="L37">                ticket.setPrice(duration * (Fare.BIKE_RATE_PER_HOUR/60));</span>
+<span class="fc" id="L38">                break;</span>
+            }
+<span class="nc" id="L40">            default: throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
         }
-<span class="fc" id="L34">    }</span>
+<span class="fc" id="L42">    }</span>
+
+    public void calculateFareWithDiscount(Ticket ticket) {
+<span class="fc" id="L45">        calculateFare(ticket);</span>
+<span class="fc" id="L46">        ticket.setPrice(ticket.getPrice()*0.95);</span>
+<span class="fc" id="L47">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

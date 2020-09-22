@@ -105,4 +105,25 @@ public class TicketDAO {
         }
         return false;
     }
+
+    public boolean retriveTicketInfo(String vehicleRegNumber) {
+        Connection con = null;
+        try {
+            con = dataBaseConfig.getConnection();
+            PreparedStatement ps = con.prepareStatement(DBConstants.RETRIVE_TICKET_INFO);
+            ps.setString(1,vehicleRegNumber);
+            ResultSet rs = ps.executeQuery();
+            boolean isDataPresent = rs.next();
+            if (isDataPresent){
+                return true;
+            }
+        }catch (Exception ex){
+            logger.error("Ticket not found",ex);
+        }finally {
+            dataBaseConfig.closeConnection(con);
+        }
+        return false;
+    }
+
+
 }
