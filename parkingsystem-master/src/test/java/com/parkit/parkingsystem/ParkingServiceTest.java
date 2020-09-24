@@ -33,6 +33,7 @@ public class ParkingServiceTest {
     @BeforeEach
     private void setUpPerTest() {
         try {
+            //when(inputReaderUtil.readSelection()).thenReturn(1); // selection was not present
             when(inputReaderUtil.readVehicleRegistrationNumber()).thenReturn("ABCDEF");
 
             ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.CAR,false);
@@ -56,6 +57,21 @@ public class ParkingServiceTest {
     public void processExitingVehicleTest(){
         parkingService.processExitingVehicle();
         verify(parkingSpotDAO, Mockito.times(1)).updateParking(any(ParkingSpot.class));
+    }
+
+    @Test
+    public void processIncomingVehicleTest(){
+        when(inputReaderUtil.readSelection()).thenReturn(1);
+        parkingService.processIncomingVehicle();
+       // verify(ticketDAO,Mockito.times(1)).saveTicket(any(Ticket.class));
+
+        verify(parkingSpotDAO,Mockito.times(1)).updateParking(any(ParkingSpot.class));
+    }
+
+    @Test
+    public void getNextParkingNumberIfAvailableTest(){
+        parkingService.getNextParkingNumberIfAvailable();
+        verify(parkingSpotDAO,Mockito.times(1)).getNextAvailableSlot(any(ParkingType.class));
     }
 
 }

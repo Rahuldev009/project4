@@ -12,6 +12,7 @@ public class InputReaderUtil {
 
     public int readSelection() {
         try {
+            System.out.println("Enter some readSelection"); // temp line
             int input = Integer.parseInt(scan.nextLine());
             return input;
         }catch(Exception e){
@@ -20,6 +21,9 @@ public class InputReaderUtil {
             return -1;
         }
     }
+
+
+
 
     public String readVehicleRegistrationNumber() throws Exception {
         try {
