@@ -31,7 +31,7 @@ public class InputReaderUtilTest {
 
     }
 
-   /* @Test
+    @Test
     public void readVehicleRegistrationNumberTest() throws Exception {
 
         String input = "ABCDEF";
@@ -41,5 +41,5 @@ public class InputReaderUtilTest {
 
         assertEquals("ABCDEF", inputReaderUtil.readVehicleRegistrationNumber());
 
-    }*/
+    }
 }
