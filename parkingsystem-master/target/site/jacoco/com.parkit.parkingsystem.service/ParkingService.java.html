@@ -115,7 +115,7 @@ public class ParkingService {
 <span class="nc" id="L115">                fareCalculatorService.calculateFareWithDiscount(ticket);</span>
             }
             else{
-<span class="fc" id="L118">            fareCalculatorService.calculateFare(ticket);}</span>
+<span class="fc" id="L118">                fareCalculatorService.calculateFare(ticket);}</span>
 <span class="pc bpc" id="L119" title="1 of 2 branches missed.">            if(ticketDAO.updateTicket(ticket)) {</span>
 <span class="fc" id="L120">                ParkingSpot parkingSpot = ticket.getParkingSpot();</span>
 <span class="fc" id="L121">                parkingSpot.setAvailable(true);</span>

@@ -105,5 +105,26 @@ import java.sql.Timestamp;
         }
 <span class="nc" id="L106">        return false;</span>
     }
+
+    public boolean retriveTicketInfo(String vehicleRegNumber) {
+<span class="nc" id="L110">        Connection con = null;</span>
+        try {
+<span class="nc" id="L112">            con = dataBaseConfig.getConnection();</span>
+<span class="nc" id="L113">            PreparedStatement ps = con.prepareStatement(DBConstants.RETRIVE_TICKET_INFO);</span>
+<span class="nc" id="L114">            ps.setString(1,vehicleRegNumber);</span>
+<span class="nc" id="L115">            ResultSet rs = ps.executeQuery();</span>
+<span class="nc" id="L116">            boolean isDataPresent = rs.next();</span>
+<span class="nc bnc" id="L117" title="All 2 branches missed.">            if (isDataPresent){</span>
+<span class="nc" id="L118">                return true;</span>
+            }
+<span class="nc" id="L120">        }catch (Exception ex){</span>
+<span class="nc" id="L121">            logger.error(&quot;Ticket not found&quot;,ex);</span>
+        }finally {
+<span class="nc" id="L123">            dataBaseConfig.closeConnection(con);</span>
+        }
+<span class="nc" id="L125">        return false;</span>
+    }
+
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

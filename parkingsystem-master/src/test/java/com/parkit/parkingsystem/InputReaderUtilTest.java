@@ -1,7 +1,7 @@
 package com.parkit.parkingsystem;
 
 import com.parkit.parkingsystem.util.InputReaderUtil;
-import org.junit.jupiter.api.BeforeAll;
+
 
 import org.junit.jupiter.api.Test;
 
@@ -15,39 +15,31 @@ public class InputReaderUtilTest {
     private  static InputReaderUtil inputReaderUtil;
 
 
-    @BeforeAll
-    private static void setUp() {
-    inputReaderUtil = new InputReaderUtil();
-    }
 
-   // @BeforeEach
-   // private void setUpPerTest() {
 
-   // }
+
 
     @Test
     public void readSelectionTest(){
-
-
-
-
-       // int input = inputReaderUtil.readSelection();
-    System.out.println("This is the readSelection output" +  inputReaderUtil.readSelection());
-        //assertEquals(inputReaderUtil.readSelection(),1);
-
-
-
-    }
-
-    @Test
-    public void readVehicleRegistrationNumberTest() throws Exception {
-       // InputOutput inputOutput= new InputOutput();
-
-        String input = "add5";
-       InputStream in = new ByteArrayInputStream(input.getBytes());
+        String input = "1";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
+        inputReaderUtil = new InputReaderUtil();
 
-        assertEquals("add5", inputReaderUtil.readVehicleRegistrationNumber());
+        assertEquals(1, inputReaderUtil.readSelection());
+
 
     }
+
+   /* @Test
+    public void readVehicleRegistrationNumberTest() throws Exception {
+
+        String input = "ABCDEF";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        inputReaderUtil = new InputReaderUtil();
+
+        assertEquals("ABCDEF", inputReaderUtil.readVehicleRegistrationNumber());
+
+    }*/
 }
