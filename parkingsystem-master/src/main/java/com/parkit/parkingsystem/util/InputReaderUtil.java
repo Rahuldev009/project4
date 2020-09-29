@@ -7,12 +7,11 @@ import java.util.Scanner;
 
 public class InputReaderUtil {
 
-    private static Scanner scan = new Scanner(System.in);
+    private Scanner scan = new Scanner(System.in);
     private static final Logger logger = LogManager.getLogger("InputReaderUtil");
 
     public int readSelection() {
         try {
-            //System.out.println("Enter some readSelection");
             int input = Integer.parseInt(scan.nextLine());
             return input;
         }catch(Exception e){

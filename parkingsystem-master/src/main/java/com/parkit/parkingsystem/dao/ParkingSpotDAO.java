@@ -70,6 +70,7 @@ public class ParkingSpotDAO {
                 result = rs.getInt(1);
                 if (result == 0)
                 {
+                    dataBaseConfig.closePreparedStatement(ps);
                     return false;
                 }
             }
