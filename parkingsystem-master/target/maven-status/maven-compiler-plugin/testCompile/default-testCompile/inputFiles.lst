@@ -7,5 +7,6 @@
 /Users/rahuljajoria/Desktop/GitProjects/GitHub/deliverable4/parkingsystem-master/src/test/java/com/parkit/parkingsystem/dao/TicketDAOTest.java
 /Users/rahuljajoria/Desktop/GitProjects/GitHub/deliverable4/parkingsystem-master/src/test/java/com/parkit/parkingsystem/service/ParkingServiceTest.java
 /Users/rahuljajoria/Desktop/GitProjects/GitHub/deliverable4/parkingsystem-master/src/test/java/com/parkit/parkingsystem/model/TicketTest.java
+/Users/rahuljajoria/Desktop/GitProjects/GitHub/deliverable4/parkingsystem-master/src/test/java/com/parkit/parkingsystem/config/DataBaseConfigTest.java
 /Users/rahuljajoria/Desktop/GitProjects/GitHub/deliverable4/parkingsystem-master/src/test/java/com/parkit/parkingsystem/integration/ParkingDataBaseIT.java
 /Users/rahuljajoria/Desktop/GitProjects/GitHub/deliverable4/parkingsystem-master/src/test/java/com/parkit/parkingsystem/service/FareCalculatorServiceTest.java

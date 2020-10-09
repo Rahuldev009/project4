@@ -38,7 +38,7 @@ public class ParkingDataBaseIT {
     private static InputReaderUtil inputReaderUtil;
 
     @BeforeAll
-    private static void setUp() throws Exception{
+    private static void setUp() throws Exception {
         parkingSpotDAO = new ParkingSpotDAO();
         parkingSpotDAO.dataBaseConfig = dataBaseTestConfig;
         ticketDAO = new TicketDAO();
@@ -54,28 +54,25 @@ public class ParkingDataBaseIT {
     }
 
     @AfterAll
-    private static void tearDown(){
+    private static void tearDown() {
 
     }
 
     @Test
-    public void testParkingACar(){
+    public void testParkingACar() {
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         parkingService.processIncomingVehicle();
         //TODO: check that a ticket is actually saved in DB and Parking table is updated with availability
-       Ticket ticket = ticketDAO.getTicket("ABCDEF");
-       assertEquals(ticketDAO.retriveTicketInfo("ABCDEF"),true );
-       //System.out.println("Check Parking " + parkingSpotDAO.checkParking(ticket.getParkingSpot()));
-        assertEquals(parkingSpotDAO.checkParking(ticket.getParkingSpot()),false );
-
-
-
+        Ticket ticket = ticketDAO.getTicket("ABCDEF");
+        assertEquals(ticketDAO.retriveTicketInfo("ABCDEF"), true);
+        //System.out.println("Check Parking " + parkingSpotDAO.checkParking(ticket.getParkingSpot()));
+        assertEquals(parkingSpotDAO.checkParking(ticket.getParkingSpot()), false);
 
 
     }
 
     @Test
-    public void testParkingLotExit(){
+    public void testParkingLotExit() {
         testParkingACar();
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         Date outTime = new Date();
@@ -87,10 +84,8 @@ public class ParkingDataBaseIT {
         parkingService.processExitingVehicle();
         //TODO: check that the fare generated and out time are populated correctly in the database
         Ticket ticket = ticketDAO.getTicket("ABCDEF");
-        assertEquals(ticket.getPrice(),0.0 );
-        assertEquals(ticket.getOutTime().getMinutes(), outTime.getMinutes() );
-
-
+        assertEquals(ticket.getPrice(), 0.0);
+        assertEquals(ticket.getOutTime().getMinutes(), outTime.getMinutes());
 
 
     }

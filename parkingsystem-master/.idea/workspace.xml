@@ -23,20 +23,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7e7a7de-bd7d-47ec-a068-fdb3c63ad33c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/dao/ParkingSpotDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/dao/TicketDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/model/ParkingSpotTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/model/TicketTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/service/InteractiveShellTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/service/ParkingServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/config/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/config/DataBaseConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/dao/ParkingSpotDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/dao/ParkingSpotDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/dao/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/dao/TicketDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/service/FareCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/service/FareCalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/service/InteractiveShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/service/InteractiveShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/service/ParkingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/service/ParkingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/util/InputReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/util/InputReaderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/FareCalculatorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/service/FareCalculatorServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/InputReaderUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/util/InputReaderUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/ParkingServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/dao/ParkingSpotDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/dao/TicketDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/integration/ParkingDataBaseIT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/integration/config/DataBaseTestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/integration/service/DataBasePrepareService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/model/ParkingSpotTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/model/TicketTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/service/FareCalculatorServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/service/InteractiveShellTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/service/ParkingServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/util/InputReaderUtilTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/config/DataBaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/config/DataBaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/dao/ParkingSpotDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/dao/ParkingSpotDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/dao/TicketDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/dao/TicketDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/model/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/service/FareCalculatorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/service/FareCalculatorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/service/InteractiveShell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/service/InteractiveShell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/service/ParkingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/service/ParkingService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/util/InputReaderUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parkit/parkingsystem/util/InputReaderUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
@@ -60,29 +75,43 @@
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.model/Ticket.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.model/Ticket.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.model/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.model/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.model/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.model/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/FareCalculatorService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/FareCalculatorService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/FareCalculatorService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/FareCalculatorService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/InteractiveShell.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/InteractiveShell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/InteractiveShell.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/InteractiveShell.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/ParkingService.java.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.service/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/InputReaderUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/InputReaderUtil.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/InputReaderUtil.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/InputReaderUtil.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.parkit.parkingsystem.util/index.source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.FareCalculatorServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.InputReaderUtilTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.ParkingServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.dao.ParkingSpotDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.dao.ParkingSpotDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.dao.TicketDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.dao.TicketDAOTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.integration.ParkingDataBaseIT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.integration.ParkingDataBaseIT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.FareCalculatorServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.InputReaderUtilTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.ParkingServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.model.ParkingSpotTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.model.ParkingSpotTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.model.TicketTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.model.TicketTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.service.FareCalculatorServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.service.FareCalculatorServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.service.ParkingServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.service.ParkingServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.util.InputReaderUtilTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.parkit.parkingsystem.util.InputReaderUtilTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.dao.ParkingSpotDAOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.dao.ParkingSpotDAOTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.dao.TicketDAOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.dao.TicketDAOTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.integration.ParkingDataBaseIT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.integration.ParkingDataBaseIT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/FareCalculatorServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/InputReaderUtilTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/ParkingServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.model.ParkingSpotTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.model.ParkingSpotTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.service.FareCalculatorServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.service.FareCalculatorServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.service.ParkingServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.service.ParkingServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.util.InputReaderUtilTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.parkit.parkingsystem.util.InputReaderUtilTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/dao/ParkingSpotDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/dao/ParkingSpotDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/dao/TicketDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/dao/TicketDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/integration/ParkingDataBaseIT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/integration/ParkingDataBaseIT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/integration/config/DataBaseTestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/integration/config/DataBaseTestConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/model/ParkingSpotTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/model/ParkingSpotTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/model/TicketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/model/TicketTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/service/InteractiveShellTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/service/InteractiveShellTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/service/ParkingServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/service/ParkingServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/util/InputReaderUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parkit/parkingsystem/util/InputReaderUtilTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,71 +168,24 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TicketDAOTest.retriveTicketInfoTestforException">
-    <configuration name="InputReaderUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ParkingDataBaseIT.testParkingACar">
+    <configuration name="ParkingDataBaseIT.testParkingACar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.parkit.parkingsystem.util.*" />
+          <option name="PATTERN" value="com.parkit.parkingsystem.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.util" />
-      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.util.InputReaderUtilTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputReaderUtilTest.readSelectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parking-system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.parkit.parkingsystem.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.util" />
-      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.util.InputReaderUtilTest" />
-      <option name="METHOD_NAME" value="readSelectionTest" />
+      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.integration.ParkingDataBaseIT" />
+      <option name="METHOD_NAME" value="testParkingACar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingSpotDAOTest.checkParking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parking-system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.parkit.parkingsystem.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.dao.ParkingSpotDAOTest" />
-      <option name="METHOD_NAME" value="checkParking" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParkingSpotDAOTest.updateParkingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parking-system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.parkit.parkingsystem.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.dao.ParkingSpotDAOTest" />
-      <option name="METHOD_NAME" value="updateParkingTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicketDAOTest.retriveTicketInfoTestforException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicketDAOTest.getTicketTestTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-system" />
       <extension name="coverage">
         <pattern>
@@ -213,7 +195,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.dao" />
       <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.dao.TicketDAOTest" />
-      <option name="METHOD_NAME" value="retriveTicketInfoTestforException" />
+      <option name="METHOD_NAME" value="getTicketTestTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDAOTest.isRecurringTestForFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkit.parkingsystem.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.dao.TicketDAOTest" />
+      <option name="METHOD_NAME" value="isRecurringTestForFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDAOTest.isRecurringTestForTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkit.parkingsystem.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.dao.TicketDAOTest" />
+      <option name="METHOD_NAME" value="isRecurringTestForTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDAOTest.updateTicketTestFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkit.parkingsystem.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.dao.TicketDAOTest" />
+      <option name="METHOD_NAME" value="updateTicketTestFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TicketDAOTest.retriveTicketInfoTestforException" />
-        <item itemvalue="JUnit.ParkingSpotDAOTest.checkParking" />
-        <item itemvalue="JUnit.ParkingSpotDAOTest.updateParkingTest" />
-        <item itemvalue="JUnit.InputReaderUtilTest" />
-        <item itemvalue="JUnit.InputReaderUtilTest.readSelectionTest" />
+        <item itemvalue="JUnit.ParkingDataBaseIT.testParkingACar" />
+        <item itemvalue="JUnit.TicketDAOTest.getTicketTestTrue" />
+        <item itemvalue="JUnit.TicketDAOTest.isRecurringTestForFalse" />
+        <item itemvalue="JUnit.TicketDAOTest.isRecurringTestForTrue" />
+        <item itemvalue="JUnit.TicketDAOTest.updateTicketTestFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -280,74 +310,83 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600868908080" />
-    <state x="466" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600774052961">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="621" y="361" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602246849686">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="466" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1600774052961" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1601396671495">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="621" y="361" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1602246849686" />
+    <state width="1878" height="217" key="GridCell.Tab.0.bottom" timestamp="1602247361615">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601396671495" />
-    <state width="1878" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601212842831" />
+    <state width="1398" height="170" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601907291170" />
+    <state width="1878" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602247361615" />
     <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.784@0.23.1440.784" timestamp="1600096874733" />
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.23.1440.790@0.23.1440.790" timestamp="1601315638054" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1601055624037" />
+    <state width="1398" height="170" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1601908104352" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1600447027348" />
+    <state width="1878" height="217" key="GridCell.Tab.0.bottom/0.23.1920.970@0.23.1920.970" timestamp="1602007489270" />
     <state width="1878" height="212" key="GridCell.Tab.0.bottom/0.23.1920.984@0.23.1920.984" timestamp="1601213281023" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1601396671495">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="217" key="GridCell.Tab.0.center" timestamp="1602247361613">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601396671495" />
-    <state width="1878" height="212" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601212842830" />
+    <state width="1398" height="170" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601907291168" />
+    <state width="1878" height="217" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602247361613" />
     <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.784@0.23.1440.784" timestamp="1600096874732" />
     <state width="1398" height="210" key="GridCell.Tab.0.center/0.23.1440.790@0.23.1440.790" timestamp="1601315638053" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1601055624036" />
+    <state width="1398" height="170" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1601908104351" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1600447027347" />
+    <state width="1878" height="217" key="GridCell.Tab.0.center/0.23.1920.970@0.23.1920.970" timestamp="1602007489269" />
     <state width="1878" height="212" key="GridCell.Tab.0.center/0.23.1920.984@0.23.1920.984" timestamp="1601213281022" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1601396671494">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="217" key="GridCell.Tab.0.left" timestamp="1602247361612">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601396671494" />
-    <state width="1878" height="212" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601212842830" />
+    <state width="1398" height="170" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601907291167" />
+    <state width="1878" height="217" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602247361612" />
     <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.784@0.23.1440.784" timestamp="1600096874731" />
     <state width="1398" height="210" key="GridCell.Tab.0.left/0.23.1440.790@0.23.1440.790" timestamp="1601315638052" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1601055624036" />
+    <state width="1398" height="170" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1601908104350" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1600447027347" />
+    <state width="1878" height="217" key="GridCell.Tab.0.left/0.23.1920.970@0.23.1920.970" timestamp="1602007489268" />
     <state width="1878" height="212" key="GridCell.Tab.0.left/0.23.1920.984@0.23.1920.984" timestamp="1601213281021" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1601396671495">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="217" key="GridCell.Tab.0.right" timestamp="1602247361614">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601396671495" />
-    <state width="1878" height="212" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601212842831" />
+    <state width="1398" height="170" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601907291169" />
+    <state width="1878" height="217" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602247361614" />
     <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.784@0.23.1440.784" timestamp="1600096874733" />
     <state width="1398" height="210" key="GridCell.Tab.0.right/0.23.1440.790@0.23.1440.790" timestamp="1601315638054" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1601055624037" />
+    <state width="1398" height="170" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1601908104351" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1600447027348" />
+    <state width="1878" height="217" key="GridCell.Tab.0.right/0.23.1920.970@0.23.1920.970" timestamp="1602007489269" />
     <state width="1878" height="212" key="GridCell.Tab.0.right/0.23.1920.984@0.23.1920.984" timestamp="1601213281022" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1601054003050">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="195" key="GridCell.Tab.1.bottom" timestamp="1602007489263">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601054003050" />
-    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1600870163775" />
+    <state width="1878" height="195" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602005704476" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.806@0.23.1440.806" timestamp="1600447027350" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1601054003049">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="195" key="GridCell.Tab.1.bottom/0.23.1920.970@0.23.1920.970" timestamp="1602007489263" />
+    <state width="1878" height="195" key="GridCell.Tab.1.center" timestamp="1602007489262">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1601054003049" />
-    <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1600870163774" />
+    <state width="1878" height="195" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602005704475" />
     <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.806@0.23.1440.806" timestamp="1600447027349" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1601054003048">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="195" key="GridCell.Tab.1.center/0.23.1920.970@0.23.1920.970" timestamp="1602007489262" />
+    <state width="1878" height="195" key="GridCell.Tab.1.left" timestamp="1602007489262">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1601054003048" />
-    <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1600870163774" />
+    <state width="1878" height="195" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602005704474" />
     <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.806@0.23.1440.806" timestamp="1600447027348" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1601054003049">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="195" key="GridCell.Tab.1.left/0.23.1920.970@0.23.1920.970" timestamp="1602007489262" />
+    <state width="1878" height="195" key="GridCell.Tab.1.right" timestamp="1602007489262">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1601054003049" />
-    <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1600870163775" />
+    <state width="1878" height="195" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602005704475" />
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.806@0.23.1440.806" timestamp="1600447027349" />
+    <state width="1878" height="195" key="GridCell.Tab.1.right/0.23.1920.970@0.23.1920.970" timestamp="1602007489262" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1600774189738">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -365,5 +404,16 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601396895323" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/parkit/parkingsystem/service/InteractiveShell.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -5,45 +5,46 @@ import com.parkit.parkingsystem.model.Ticket;
 
 <span class="fc" id="L6">public class FareCalculatorService {</span>
 
-    public void calculateFare(Ticket ticket){
-<span class="pc bpc" id="L9" title="1 of 4 branches missed.">        if( (ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime())) ){</span>
-<span class="fc" id="L10">            throw new IllegalArgumentException(&quot;Out time provided is incorrect:&quot;+ticket.getOutTime().toString());</span>
+    public void calculateFare(Ticket ticket) {
+<span class="pc bpc" id="L9" title="1 of 4 branches missed.">        if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {</span>
+<span class="fc" id="L10">            throw new IllegalArgumentException(&quot;Out time provided is incorrect:&quot; + ticket.getOutTime().toString());</span>
         }
 
-       // int inHour = ticket.getInTime().getHours();
-       // int outHour = ticket.getOutTime().getHours();
+        // int inHour = ticket.getInTime().getHours();
+        // int outHour = ticket.getOutTime().getHours();
 
 <span class="fc" id="L16">        long inHour = ticket.getInTime().getTime();</span>
 <span class="fc" id="L17">        long outHour = ticket.getOutTime().getTime();</span>
 
 
         //TODO: Some tests are failing here. Need to check if this logic is correct
-<span class="fc" id="L21">        int duration = (int) ((outHour - inHour)/(1000*60));</span>
+<span class="fc" id="L21">        int duration = (int) ((outHour - inHour) / (1000 * 60));</span>
 
-<span class="pc bpc" id="L23" title="1 of 3 branches missed.">        switch (ticket.getParkingSpot().getParkingType()){</span>
+<span class="pc bpc" id="L23" title="1 of 3 branches missed.">        switch (ticket.getParkingSpot().getParkingType()) {</span>
             case CAR: {
-<span class="fc bfc" id="L25" title="All 2 branches covered.">                if (duration&lt;30){</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">                if (duration &lt; 30) {</span>
 <span class="fc" id="L26">                    ticket.setPrice(0.0);</span>
 <span class="fc" id="L27">                    break;</span>
                 }
-<span class="fc" id="L29">                ticket.setPrice(duration * (Fare.CAR_RATE_PER_HOUR/60));</span>
+<span class="fc" id="L29">                ticket.setPrice(duration * (Fare.CAR_RATE_PER_HOUR / 60));</span>
 <span class="fc" id="L30">                break;</span>
             }
             case BIKE: {
-<span class="fc bfc" id="L33" title="All 2 branches covered.">                if (duration&lt;30){</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">                if (duration &lt; 30) {</span>
 <span class="fc" id="L34">                    ticket.setPrice(0.0);</span>
 <span class="fc" id="L35">                    break;</span>
                 }
-<span class="fc" id="L37">                ticket.setPrice(duration * (Fare.BIKE_RATE_PER_HOUR/60));</span>
+<span class="fc" id="L37">                ticket.setPrice(duration * (Fare.BIKE_RATE_PER_HOUR / 60));</span>
 <span class="fc" id="L38">                break;</span>
             }
-<span class="nc" id="L40">            default: throw new IllegalArgumentException(&quot;Unknown Parking Type&quot;);</span>
+            default:
+<span class="nc" id="L41">                throw new IllegalArgumentException(&quot;Unknown Parking Type&quot;);</span>
         }
-<span class="fc" id="L42">    }</span>
+<span class="fc" id="L43">    }</span>
 
     public void calculateFareWithDiscount(Ticket ticket) {
-<span class="fc" id="L45">        calculateFare(ticket);</span>
-<span class="fc" id="L46">        ticket.setPrice(ticket.getPrice()*0.95);</span>
-<span class="fc" id="L47">    }</span>
+<span class="fc" id="L46">        calculateFare(ticket);</span>
+<span class="fc" id="L47">        ticket.setPrice(ticket.getPrice() * 0.95);</span>
+<span class="fc" id="L48">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

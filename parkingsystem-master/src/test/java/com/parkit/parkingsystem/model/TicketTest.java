@@ -9,8 +9,7 @@ import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TicketTest {
-     Ticket ticket;
-
+    Ticket ticket;
 
 
     @BeforeEach
@@ -25,12 +24,12 @@ class TicketTest {
 
     @Test
     void getIdTest() {
-        assertEquals(123,ticket.getId());
+        assertEquals(123, ticket.getId());
     }
 
     @Test
     void setIdTest() {
         ticket.setId(100);
-        assertEquals(100,ticket.getId());
+        assertEquals(100, ticket.getId());
     }
 }

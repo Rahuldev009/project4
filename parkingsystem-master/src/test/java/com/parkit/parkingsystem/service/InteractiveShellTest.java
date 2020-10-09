@@ -15,16 +15,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class InteractiveShellTest {
     private static InteractiveShell interactiveShell;
-    InputReaderUtil inputReaderUtil ;
-    ParkingSpotDAO parkingSpotDAO = new ParkingSpotDAO();
-    TicketDAO ticketDAO = new TicketDAO();
-    ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
+    InputReaderUtil inputReaderUtil;
     boolean continueApp = true;
 
 
     @BeforeEach
     void setUp() {
-
+        ParkingSpotDAO parkingSpotDAO = new ParkingSpotDAO();
+        TicketDAO ticketDAO = new TicketDAO();
+        ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
+        InteractiveShell ishell = new InteractiveShell();
 
 
     }
@@ -33,16 +33,42 @@ class InteractiveShellTest {
     void tearDown() {
     }
 
-  /*  @Test
-    void loadInterfaceTest() {
+    @Test
+    void loadInterfaceTestMenu1() {
         String input = "3";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
-        inputReaderUtil = new InputReaderUtil();
         InteractiveShell.loadInterface();
 
+    }
 
-    }*/
+    @Test
+    void loadInterfaceTestMenu2() {
+        String input = "4\n3";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        InteractiveShell.loadInterface();
+
+    }
+//    @Test
+//    void loadInterfaceTestMenu2() {
+//        String input = "2";
+//        InputStream in = new ByteArrayInputStream(input.getBytes());
+//        System.setIn(in);
+//        inputReaderUtil = new InputReaderUtil();
+//        assertEquals(2, inputReaderUtil.readSelection());
+//
+//    }
+//
+//    @Test
+//    void loadInterfaceTestMenu3() {
+//        String input = "3";
+//        InputStream in = new ByteArrayInputStream(input.getBytes());
+//        System.setIn(in);
+//        inputReaderUtil = new InputReaderUtil();
+//        assertEquals(3, inputReaderUtil.readSelection());
+//
+//    }
 
 
 }
