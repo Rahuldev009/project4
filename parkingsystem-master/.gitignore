@@ -6,3 +6,6 @@
 
 # macOS Files
 .DS_Store
+
+# ignore .idea folders
+.idea/
