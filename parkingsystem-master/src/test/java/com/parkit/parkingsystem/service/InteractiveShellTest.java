@@ -50,25 +50,4 @@ class InteractiveShellTest {
         InteractiveShell.loadInterface();
 
     }
-//    @Test
-//    void loadInterfaceTestMenu2() {
-//        String input = "2";
-//        InputStream in = new ByteArrayInputStream(input.getBytes());
-//        System.setIn(in);
-//        inputReaderUtil = new InputReaderUtil();
-//        assertEquals(2, inputReaderUtil.readSelection());
-//
-//    }
-//
-//    @Test
-//    void loadInterfaceTestMenu3() {
-//        String input = "3";
-//        InputStream in = new ByteArrayInputStream(input.getBytes());
-//        System.setIn(in);
-//        inputReaderUtil = new InputReaderUtil();
-//        assertEquals(3, inputReaderUtil.readSelection());
-//
-//    }
-
-
 }

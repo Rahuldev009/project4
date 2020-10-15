@@ -15,8 +15,6 @@ public class DataBaseConfig {
 
 
     public Connection getConnection() throws ClassNotFoundException, SQLException, IOException {
-
-
         logger.info("Create DB connection");
         Class.forName("com.mysql.cj.jdbc.Driver");
         Properties properties = new Properties();
@@ -25,7 +23,6 @@ public class DataBaseConfig {
         String password = properties.getProperty("password");
         String url = properties.getProperty("url");
         return DriverManager.getConnection(url, user, password);
-        // return DriverManager.getConnection("jdbc:mysql://localhost:3306/prod","root","rootroot");
     }
 
     public void closeConnection(Connection con) {

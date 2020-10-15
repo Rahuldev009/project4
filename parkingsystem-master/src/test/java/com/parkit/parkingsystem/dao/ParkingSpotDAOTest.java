@@ -5,19 +5,15 @@ import com.parkit.parkingsystem.model.ParkingSpot;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-
 import java.sql.Connection;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ParkingSpotDAOTest {
-
 
     @Mock
     ParkingSpot parkingSpot;
     ParkingSpotDAO parkingSpotDAO;
     Connection con;
-
 
     @BeforeEach
     void setUp() {
@@ -37,7 +33,6 @@ class ParkingSpotDAOTest {
         assertEquals(true, parkingSpotDAO.updateParking(parkingSpot));
     }
 
-
     @Test
     void checkParkingTestFalse() {
         assertEquals(false, parkingSpotDAO.checkParking(parkingSpot));
@@ -47,6 +42,5 @@ class ParkingSpotDAOTest {
     void checkParkingTestTrue() {
         ParkingSpot parkingSpot1 = new ParkingSpot(10, ParkingType.CAR, true);
         assertEquals(true, parkingSpotDAO.checkParking(parkingSpot1));
-
     }
 }

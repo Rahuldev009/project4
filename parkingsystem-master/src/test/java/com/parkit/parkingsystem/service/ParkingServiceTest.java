@@ -76,6 +76,4 @@ public class ParkingServiceTest {
         parkingService.getNextParkingNumberIfAvailable();
         verify(parkingSpotDAO, Mockito.times(1)).getNextAvailableSlot(any(ParkingType.class));
     }
-
-
 }

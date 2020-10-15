@@ -23,7 +23,6 @@ public class DataBaseTestConfig extends DataBaseConfig {
         String password = properties.getProperty("password");
         String url = properties.getProperty("url");
         return DriverManager.getConnection(url, user, password);
-       // return DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","rootroot");
     }
 
     public void closeConnection(Connection con){

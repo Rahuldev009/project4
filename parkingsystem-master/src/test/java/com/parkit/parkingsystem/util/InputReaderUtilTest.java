@@ -1,21 +1,13 @@
 package com.parkit.parkingsystem.util;
-
-import com.parkit.parkingsystem.util.InputReaderUtil;
-
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class InputReaderUtilTest {
     private static InputReaderUtil inputReaderUtil;
-
 
     @Test
     public void readSelectionTest() {
@@ -24,13 +16,10 @@ public class InputReaderUtilTest {
         System.setIn(in);
         inputReaderUtil = new InputReaderUtil();
         assertEquals(1, inputReaderUtil.readSelection());
-
-
     }
 
     @Test
     public void readSelectionExceptionTest() {
-
         String input = "a";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
@@ -45,7 +34,6 @@ public class InputReaderUtilTest {
         System.setIn(in);
         inputReaderUtil = new InputReaderUtil();
         assertEquals("ABCDEF", inputReaderUtil.readVehicleRegistrationNumber());
-
     }
 
     @Test
@@ -58,5 +46,4 @@ public class InputReaderUtilTest {
             inputReaderUtil.readVehicleRegistrationNumber();
         });
     }
-
 }

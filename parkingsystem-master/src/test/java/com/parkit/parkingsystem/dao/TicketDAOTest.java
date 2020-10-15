@@ -12,7 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
-
 import java.io.IOException;
 import java.sql.*;
 import java.util.Date;
@@ -23,7 +22,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @MockitoSettings(strictness = Strictness.LENIENT)
 class TicketDAOTest {
 
-
     @Mock
     private static DataBaseConfig dbConfig;
     DataBaseConfig dataBaseConfig = new DataBaseConfig();
@@ -33,7 +31,6 @@ class TicketDAOTest {
 
     @BeforeEach
     void setUp() {
-
         con = null;
         ticket = new Ticket();
         Date inTime = new Date();
@@ -46,19 +43,14 @@ class TicketDAOTest {
         ticket.setPrice(0.0);
         ticket.setInTime(inTime);
         ticket.setOutTime(outTime);
-
-
     }
-
 
     @Test
     void saveTicketTest() throws SQLException, ClassNotFoundException, IOException {
-        // Ticket ticket1= null;
         con = dataBaseConfig.getConnection();
-        boolean result = false;
+        boolean result;
         PreparedStatement ps = con.prepareStatement(DBConstants.SAVE_TICKET);
         //ID, PARKING_NUMBER, VEHICLE_REG_NUMBER, PRICE, IN_TIME, OUT_TIME)
-        //ps.setInt(1,ticket.getId());
         ps.setInt(1, ticket.getParkingSpot().getId());
         ps.setString(2, ticket.getVehicleRegNumber());
         ps.setDouble(3, ticket.getPrice());
@@ -72,9 +64,7 @@ class TicketDAOTest {
 
     @Test
     void saveTicketTestFalse() {
-        boolean result = false;
-        assertEquals(result, ticketDAO.saveTicket(ticket));
-
+        assertEquals(false, ticketDAO.saveTicket(ticket));
     }
 
     @Test
@@ -86,7 +76,6 @@ class TicketDAOTest {
         ps.setString(1, "abc1234");
         ResultSet rs = ps.executeQuery();
         boolean result = rs.next();
-        //System.out.println("ticket value "+ result);
         if (result) {
             ticket1 = new Ticket();
             ParkingSpot parkingSpot = new ParkingSpot(rs.getInt(1), ParkingType.valueOf(rs.getString(6)), false);
@@ -97,7 +86,6 @@ class TicketDAOTest {
             ticket1.setInTime(rs.getTimestamp(4));
             ticket1.setOutTime(rs.getTimestamp(5));
         }
-       // System.out.println("ticket value "+ ticket1.getId());
         dataBaseConfig.closeResultSet(rs);
         dataBaseConfig.closePreparedStatement(ps);
         dataBaseConfig.closeConnection(con);
@@ -112,8 +100,6 @@ class TicketDAOTest {
         //ID, PARKING_NUMBER, VEHICLE_REG_NUMBER, PRICE, IN_TIME, OUT_TIME)
         ps.setString(1, "ABCDEF123");
         ResultSet rs = ps.executeQuery();
-        // boolean result = ps.execute();
-
         if (rs.next()) {
             ticket1 = new Ticket();
             ParkingSpot parkingSpot = new ParkingSpot(rs.getInt(1), ParkingType.valueOf(rs.getString(6)), false);
@@ -136,21 +122,10 @@ class TicketDAOTest {
         assertEquals(true, ticketDAO.updateTicket(ticket));
     }
 
-
-//    @Test
-//    void updateTicketTestFalse() {
-//        ticket.setOutTime(null);
-//        assertEquals(false, ticketDAO.updateTicket(ticket));
-//
-//    }
-
-
     @Test
     void isRecurringTestForTrue() {
         assertEquals(true, ticketDAO.isRecurring(ticket.getVehicleRegNumber()));
-
     }
-
 
     @Test
     void isRecurringTestForFalse() {
@@ -165,17 +140,5 @@ class TicketDAOTest {
     @Test
     void retriveTicketInfoTestForFalse() {
         assertEquals(false, ticketDAO.retriveTicketInfo("cdcdd"));
-    }
-
-
-    @Test
-    void retriveTicketInfoTestForException() {
-
-
-        // when(dbConfig.getConnection()).thenThrow(SQLException.class);
-
-
-        // assertEquals(false,ticketDAO.retriveTicketInfo("cdcdd"));
-
     }
 }
