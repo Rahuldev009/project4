@@ -34,7 +34,7 @@ class InteractiveShellTest {
     }
 
     @Test
-    void loadInterfaceTestMenu1() {
+    void loadInterfaceTestMenu3() {
         String input = "3";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
@@ -43,7 +43,7 @@ class InteractiveShellTest {
     }
 
     @Test
-    void loadInterfaceTestMenu2() {
+    void loadInterfaceTestMenuDefault() {
         String input = "4\n3";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);

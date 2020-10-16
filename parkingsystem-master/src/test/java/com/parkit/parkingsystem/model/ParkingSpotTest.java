@@ -66,7 +66,6 @@ class ParkingSpotTest {
     @Test
     void testEqualsTest3() {
         ParkingSpot parkingSpot1 = null;
-        //ParkingSpot parkingSpot2 = new ParkingSpot(12, ParkingType.CAR, false);
         boolean result = true;
         if (parkingSpot1 == null || parkingSpot.getClass() != parkingSpot1.getClass()) {
             result = false;

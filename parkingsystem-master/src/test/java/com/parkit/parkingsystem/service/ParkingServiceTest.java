@@ -12,6 +12,8 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.util.Date;
 
 import static org.mockito.Mockito.*;
@@ -29,8 +31,10 @@ public class ParkingServiceTest {
     private static TicketDAO ticketDAO;
 
 
+
+
     @Test
-    public void processExitingVehicleTest() throws Exception {
+    public void processExitingVehicleTest() {
         when(inputReaderUtil.readVehicleRegistrationNumber()).thenReturn("ABCDEF");
         ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.CAR, false);
         Ticket ticket = new Ticket();
@@ -46,7 +50,7 @@ public class ParkingServiceTest {
     }
 
     @Test
-    public void processIncomingVehicleTest() throws Exception {
+    public void processIncomingVehicleTest() {
         when(inputReaderUtil.readSelection()).thenReturn(1);
         when(inputReaderUtil.readVehicleRegistrationNumber()).thenReturn("ABCDEF");
         ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.CAR, false);
@@ -63,7 +67,7 @@ public class ParkingServiceTest {
     }
 
     @Test
-    public void getNextParkingNumberIfAvailableTest() {
+    public void getNextParkingNumberIfAvailableTestForCar() {
         when(inputReaderUtil.readSelection()).thenReturn(1);
         ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.CAR, false);
         Ticket ticket = new Ticket();
@@ -72,6 +76,21 @@ public class ParkingServiceTest {
         ticket.setVehicleRegNumber("ABCDEF");
         parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         ParkingType car = ParkingType.CAR;
+        when(parkingSpotDAO.getNextAvailableSlot(car)).thenReturn(2);
+        parkingService.getNextParkingNumberIfAvailable();
+        verify(parkingSpotDAO, Mockito.times(1)).getNextAvailableSlot(any(ParkingType.class));
+    }
+
+    @Test
+    public void getNextParkingNumberIfAvailableTestForBike() {
+        when(inputReaderUtil.readSelection()).thenReturn(2);
+        ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.BIKE, false);
+        Ticket ticket = new Ticket();
+        ticket.setInTime(new Date(System.currentTimeMillis() - (60 * 60 * 1000)));
+        ticket.setParkingSpot(parkingSpot);
+        ticket.setVehicleRegNumber("ABCDEF");
+        parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
+        ParkingType car = ParkingType.BIKE;
         when(parkingSpotDAO.getNextAvailableSlot(car)).thenReturn(2);
         parkingService.getNextParkingNumberIfAvailable();
         verify(parkingSpotDAO, Mockito.times(1)).getNextAvailableSlot(any(ParkingType.class));

@@ -1,8 +1,12 @@
 package com.parkit.parkingsystem.util;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.matchers.Null;
+
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.util.NoSuchElementException;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -28,7 +32,7 @@ public class InputReaderUtilTest {
     }
 
     @Test
-    public void readVehicleRegistrationNumberTest() throws Exception {
+    public void readVehicleRegistrationNumberTest() {
         String input = "ABCDEF";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
@@ -37,7 +41,7 @@ public class InputReaderUtilTest {
     }
 
     @Test
-    public void readVehicleRegistrationNumberExceptionTest() {
+    public void readVehicleRegistrationNumberExceptionTestSpaceString() {
         String input = " ";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);

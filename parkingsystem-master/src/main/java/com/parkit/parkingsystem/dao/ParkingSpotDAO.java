@@ -55,8 +55,9 @@ public class ParkingSpotDAO {
             return false;
         } finally {
             try {
-                if(ps!=null)
+                if(ps!=null){
                     dataBaseConfig.closePreparedStatement(ps);
+                }
             } catch (Exception ex) {
                 logger.error("Error closing prepared statement", ex);
             }
